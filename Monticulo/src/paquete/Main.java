@@ -17,6 +17,9 @@ public class Main {
 		mon.mostrar();
 		System.out.println("---");
 		System.out.println(mon.sacar());
+		System.out.println(mon.sacar());
+		System.out.println(mon.sacar());
+		System.out.println(mon.sacar());
 		System.out.println("---");
 		mon.mostrar();
 		
