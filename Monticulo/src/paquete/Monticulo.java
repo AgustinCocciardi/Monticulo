@@ -74,4 +74,16 @@ public class Monticulo<T extends Comparable<T>> {
 		return dato;
 	}
 
+	public T getPrimerElemento() {
+		return this.vector[1];
+	}
+	
+	public boolean isEmpty() {
+		return this.cantElem == 0;
+	}
+	
+	public void empty() {
+		this.cantElem = 0;
+	}
+	
 }
