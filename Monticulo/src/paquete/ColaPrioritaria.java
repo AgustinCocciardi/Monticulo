@@ -9,11 +9,11 @@ public class ColaPrioritaria<T extends Comparable<T>> {
 	}
 	
 	public void offer(T dato) {
-		this.monticulo.insertar(dato);
+		this.monticulo.monticulear(dato);
 	}
 	
 	public T poll() {
-		return (T) this.monticulo.sacar();
+		return (T) this.monticulo.desmonticulear();
 	}
 	
 	public T peek() {

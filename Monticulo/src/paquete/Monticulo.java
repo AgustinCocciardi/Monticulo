@@ -25,7 +25,7 @@ public class Monticulo<T extends Comparable<T>> {
 		this.vector = nuevo;
 	}
 
-	public void insertar(T dato) {
+	public void monticulear(T dato) {
 		if (cantElem == tamanio-1)
 			resize();
 		this.cantElem++;
@@ -40,7 +40,7 @@ public class Monticulo<T extends Comparable<T>> {
 		}
 	}
 
-	public T sacar() {
+	public T desmonticulear() {
 		if (this.cantElem == 0)
 			return null;
 		T dato = this.vector[1];

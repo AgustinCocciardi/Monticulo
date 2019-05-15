@@ -18,37 +18,37 @@ public class MonticuloTest {
 	
 	@Test
 	public void quePuedeAgregar() {
-		monticulo.insertar(17.5);
+		monticulo.monticulear(17.5);
 		Assert.assertEquals(17.5, monticulo.getPrimerElemento(), 0.1);
 	}
 	
 	@Test
 	public void queAgregaYOrdena() {
-		monticulo.insertar(17.5);
-		monticulo.insertar(6.0);
-		monticulo.insertar(4.75);
-		monticulo.insertar(1.12);
+		monticulo.monticulear(17.5);
+		monticulo.monticulear(6.0);
+		monticulo.monticulear(4.75);
+		monticulo.monticulear(1.12);
 		Assert.assertEquals(1.12, monticulo.getPrimerElemento(), 0.1);
 	}
 	
 	@Test
 	public void queEliminaElPrimero() {
-		monticulo.insertar(17.5);
-		monticulo.insertar(6.0);
-		monticulo.insertar(4.75);
-		monticulo.insertar(1.12);
-		Assert.assertEquals(1.12, monticulo.sacar(), 0.1);
+		monticulo.monticulear(17.5);
+		monticulo.monticulear(6.0);
+		monticulo.monticulear(4.75);
+		monticulo.monticulear(1.12);
+		Assert.assertEquals(1.12, monticulo.desmonticulear(), 0.1);
 	}
 	
 	@Test
 	public void queEliminaSinProblemas() {
-		monticulo.insertar(17.5);
-		monticulo.insertar(6.0);
-		monticulo.insertar(4.75);
-		monticulo.insertar(1.12);
-		Assert.assertEquals(1.12, monticulo.sacar(), 0.1);
-		Assert.assertEquals(4.75, monticulo.sacar(), 0.1);
-		Assert.assertEquals(6.0, monticulo.sacar(), 0.1);
-		Assert.assertEquals(17.5, monticulo.sacar(), 0.1);
+		monticulo.monticulear(17.5);
+		monticulo.monticulear(6.0);
+		monticulo.monticulear(4.75);
+		monticulo.monticulear(1.12);
+		Assert.assertEquals(1.12, monticulo.desmonticulear(), 0.1);
+		Assert.assertEquals(4.75, monticulo.desmonticulear(), 0.1);
+		Assert.assertEquals(6.0, monticulo.desmonticulear(), 0.1);
+		Assert.assertEquals(17.5, monticulo.desmonticulear(), 0.1);
 	}
 }
