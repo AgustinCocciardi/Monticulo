@@ -64,17 +64,11 @@ public class Monticulo<T extends Comparable<T>> {
 				this.vector[i] = menor;
 				i *= 2;
 			}
-//			if (2 * i <= this.cantElem && this.vector[i].compareTo(this.vector[2 * i]) > 0) {
-//				aux = this.vector[i];
-//				this.vector[i] = this.vector[i * 2];
-//				this.vector[i * 2] = aux;
-//			}
-
 		}
 		if (2 * i <= this.cantElem && this.vector[i].compareTo(this.vector[2 * i]) > 0) {
-			aux = this.vector[1];
-			this.vector[1] = this.vector[1 * 2];
-			this.vector[1 * 2] = aux;
+			aux = this.vector[i];
+			this.vector[i] = this.vector[i * 2];
+			this.vector[i * 2] = aux;
 		}
 
 		return dato;
